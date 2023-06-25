@@ -4,3 +4,17 @@ body {
   font-family: "Roboto Slab", serif;
   background-color: #214469;
 }
+h1 {
+  animation: animati 1s;
+}
+@keyframes animati {
+  0% {
+    transform: translateX(25px);
+  }
+  50% {
+    transform: translateX(-25px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
