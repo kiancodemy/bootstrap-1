@@ -7,14 +7,31 @@ body {
 h1 {
   animation: animati 1s;
 }
+
+.animation-card {
+  animation-fill-mode: forwards;
+  animation: animation-card 0.8s;
+  backface-visibility: hidden;
+}
 @keyframes animati {
   0% {
-    transform: translateX(25px);
+    opacity: 0;
+    transform: translateX(75px);
   }
-  50% {
-    transform: translateX(-25px);
-  }
+
   100% {
-    transform: translateX(0px);
+    opacity: 1;
+    transform: translateX(1px);
+  }
+}
+@keyframes animation-card {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
