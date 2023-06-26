@@ -8,10 +8,16 @@ h1 {
   animation: animati 1s;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .animation-card {
   animation-fill-mode: forwards;
   animation: animation-card 0.8s;
   backface-visibility: hidden;
+  transition: transform 1s ease-out;
 }
 @keyframes animati {
   0% {
@@ -34,4 +40,8 @@ h1 {
     opacity: 1;
     transform: translateY(0px);
   }
+}
+.animation-card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.4);
 }
